@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.summary      = "RubySwift is making Swift more Ruby way."
 
   s.description  = <<-DESC
-                   RubySwift is making Swift more Ruby way.
+                   RubySwift is making Swift more Ruby way. It's for programmer productivity and fun!
                    DESC
 
   s.homepage     = "https://github.com/Appletone/RubySwift"
