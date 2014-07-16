@@ -3,12 +3,57 @@
 RubySwift is making Swift more Ruby way.
 
 ## Examples ##
+```swift
+5.times {
+    println("Hey! You look really like Ruby")
+}
+
+```
+
+```swift
+5.upto(10) {
+    println($0)
+}
+
+=>
+5
+6
+7
+8
+9
+10
+```
+
+```swift
+"HELLO".capitalized() 
+=> Hello
+```
+
+```swift
+"HELLO".downcase() 
+=> hello
+```
+
+```swift
+"hello".upcase() 
+=> HELLO
+```
 
 ## Methods ##
+### String ###
+Function | 
+---- | -------------
+capitalized|
+downcase|
+upcase|
+
+### Int ###
+Function | 
+---- | -------------
+times|
+upto|
 
 ## TODO ##
-
-
 ### String ###
 - split(Regexp)
 - scan(Regexp)
@@ -16,9 +61,6 @@ RubySwift is making Swift more Ruby way.
 - strip
 - split(“”)
 - reverse
-- capitalized
-- downcase
-- upcase
 - to_i
 - to_s
 - to_str
@@ -29,10 +71,7 @@ RubySwift is making Swift more Ruby way.
 - str[Regexp]
 
 ### Int ###
-
-- upto
 - downto
-- times
 - to_s
 - abs
 - ceil

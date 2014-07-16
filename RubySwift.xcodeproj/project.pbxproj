@@ -10,6 +10,12 @@
 		D15F80B11976065E00EE5992 /* RubySwift.h in Headers */ = {isa = PBXBuildFile; fileRef = D15F80B01976065E00EE5992 /* RubySwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D15F80B71976065E00EE5992 /* RubySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15F80AB1976065E00EE5992 /* RubySwift.framework */; };
 		D15F80BE1976065E00EE5992 /* RubySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15F80BD1976065E00EE5992 /* RubySwiftTests.swift */; };
+		D15F80CB19760CB300EE5992 /* RubySwiftString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15F80CA19760CB300EE5992 /* RubySwiftString.swift */; };
+		D15F80CC19760CB300EE5992 /* RubySwiftString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15F80CA19760CB300EE5992 /* RubySwiftString.swift */; };
+		D15F80CE19760CE800EE5992 /* RubySwiftStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15F80CD19760CE800EE5992 /* RubySwiftStringTests.swift */; };
+		D15F80D019760DF100EE5992 /* RubySwiftInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15F80CF19760DF100EE5992 /* RubySwiftInt.swift */; };
+		D15F80D119760DF100EE5992 /* RubySwiftInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15F80CF19760DF100EE5992 /* RubySwiftInt.swift */; };
+		D15F80D319760E1400EE5992 /* RubySwiftIntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15F80D219760E1400EE5992 /* RubySwiftIntTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,10 @@
 		D15F80B61976065E00EE5992 /* RubySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RubySwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15F80BC1976065E00EE5992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D15F80BD1976065E00EE5992 /* RubySwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubySwiftTests.swift; sourceTree = "<group>"; };
+		D15F80CA19760CB300EE5992 /* RubySwiftString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RubySwiftString.swift; sourceTree = "<group>"; };
+		D15F80CD19760CE800EE5992 /* RubySwiftStringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RubySwiftStringTests.swift; sourceTree = "<group>"; };
+		D15F80CF19760DF100EE5992 /* RubySwiftInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RubySwiftInt.swift; sourceTree = "<group>"; };
+		D15F80D219760E1400EE5992 /* RubySwiftIntTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RubySwiftIntTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,8 @@
 			children = (
 				D15F80B01976065E00EE5992 /* RubySwift.h */,
 				D15F80AE1976065E00EE5992 /* Supporting Files */,
+				D15F80CA19760CB300EE5992 /* RubySwiftString.swift */,
+				D15F80CF19760DF100EE5992 /* RubySwiftInt.swift */,
 			);
 			path = RubySwift;
 			sourceTree = "<group>";
@@ -90,6 +102,8 @@
 			children = (
 				D15F80BD1976065E00EE5992 /* RubySwiftTests.swift */,
 				D15F80BB1976065E00EE5992 /* Supporting Files */,
+				D15F80CD19760CE800EE5992 /* RubySwiftStringTests.swift */,
+				D15F80D219760E1400EE5992 /* RubySwiftIntTests.swift */,
 			);
 			path = RubySwiftTests;
 			sourceTree = "<group>";
@@ -210,6 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D15F80CB19760CB300EE5992 /* RubySwiftString.swift in Sources */,
+				D15F80D019760DF100EE5992 /* RubySwiftInt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D15F80CC19760CB300EE5992 /* RubySwiftString.swift in Sources */,
+				D15F80CE19760CE800EE5992 /* RubySwiftStringTests.swift in Sources */,
+				D15F80D319760E1400EE5992 /* RubySwiftIntTests.swift in Sources */,
 				D15F80BE1976065E00EE5992 /* RubySwiftTests.swift in Sources */,
+				D15F80D119760DF100EE5992 /* RubySwiftInt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +340,7 @@
 		D15F80C21976065E00EE5992 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -329,12 +350,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D15F80C31976065E00EE5992 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -396,6 +419,7 @@
 				D15F80C31976065E00EE5992 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D15F80C41976065E00EE5992 /* Build configuration list for PBXNativeTarget "RubySwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +428,7 @@
 				D15F80C61976065E00EE5992 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
