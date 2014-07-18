@@ -11,13 +11,13 @@ import XCTest
 class RubySwiftStringTests: XCTestCase {
     
     func testCapitalized() {
-        XCTAssertEqual("Hello", "HELLO".capitalized())
+        XCTAssertEqual("Hello", "HELLO".capitalized)
     }
     
     func testDowncase() {
-        XCTAssertEqual("hello", "HELLO".downcase())
+        XCTAssertEqual("hello", "HELLO".downcase)
     }
     func testUpcase() {
-        XCTAssertEqual("HELLO", "hello".upcase())
+        XCTAssertEqual("HELLO", "hello".upcase)
     }
 }

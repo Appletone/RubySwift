@@ -25,21 +25,30 @@ RubySwift is making Swift more Ruby way.
 ```
 
 ```swift
-"HELLO".capitalized() 
+3.days.ago  // => 2014-07-21 01:06:03 +0000
+```
+
+```swift
+"HELLO".capitalized
 => Hello
 ```
 
 ```swift
-"HELLO".downcase() 
+"HELLO".downcase
 => hello
 ```
 
 ```swift
-"hello".upcase() 
+"hello".upcase
 => HELLO
 ```
 
 ## Methods ##
+### Date ###
+Function | 
+---- | -------------
+ago|
+ 
 ### String ###
 Function | 
 ---- | -------------
@@ -54,6 +63,8 @@ times|
 upto|
 
 ## TODO ##
+
+
 ### String ###
 - split(Regexp)
 - scan(Regexp)

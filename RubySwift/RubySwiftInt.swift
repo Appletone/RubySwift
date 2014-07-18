@@ -10,6 +10,17 @@ import Foundation
 
 extension Int {
     
+    // computed properties
+    
+    var days:Int {
+        return 60*60*24*self
+    }
+    var ago:NSDate {
+        return NSDate().dateByAddingTimeInterval(Double(self))
+    }
+    
+    // functions
+    
     func times(task:() -> ()) {
         for i in 0..<self {
             task()
@@ -21,6 +32,4 @@ extension Int {
             task(i)
         }
     }
-
-    
 }

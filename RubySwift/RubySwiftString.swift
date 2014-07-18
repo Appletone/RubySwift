@@ -10,17 +10,22 @@ import Foundation
 
 extension String {
     
-    func capitalized () -> String {
+    // computed properties
+    
+    var capitalized: String {
         return capitalizedString
     }
     
-    func downcase() -> String {
-        return self.lowercaseString
+    var downcase: String {
+        return lowercaseString
     }
     
-    func upcase() -> String {
-        return self.uppercaseString
+    var upcase: String {
+        return uppercaseString
     }
+    
+    
+    // functions
     
     mutating func downcase$() -> String {
         self = self.lowercaseString

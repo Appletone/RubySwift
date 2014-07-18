@@ -25,4 +25,15 @@ class RubySwiftIntTests: XCTestCase {
             println($0)
         }
     }
+    
+    func testDays() {
+        XCTAssertEqual(3.days, 259200)
+        
+        var d = 3.days.ago
+        
+        println(d)
+//        3.days().ago()
+    }
+    
+    
 }
