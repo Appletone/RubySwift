@@ -9,6 +9,26 @@
 import XCTest
 
 class RubySwiftIntTests: XCTestCase {
+
+    func test3Seconds() {
+        XCTAssertEqual(3.seconds, 3, "should return 3 seconds")
+    }
+
+    func test5Minutes() {
+        XCTAssertEqual(5.minutes, 300, "should be 300 seconds")
+    }
+
+    func test2Hours() {
+        XCTAssertEqual(2.hours, 7200, "should be 7200 seconds")
+    }
+
+    func test1Day() {
+        XCTAssertEqual(1.days, 86400, "should be 86400 seconds")
+    }
+
+    func test2Weeks() {
+        XCTAssertEqual(2.weeks, 1209600, "should be 86400 seconds")
+    }
     
     func testTimes() {
         var i = 0
