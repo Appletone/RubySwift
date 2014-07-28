@@ -23,6 +23,10 @@ extension Int {
         return self * 60.minutes
     }
 
+    var day: Int {
+        return self.days
+    }
+    
     var days: Int {
         return self * 24.hours
     }
@@ -32,7 +36,7 @@ extension Int {
     }
 
     var ago: NSDate {
-        return NSDate().dateByAddingTimeInterval(Double(self))
+        return NSDate().dateByAddingTimeInterval(-Double(self))
     }
 
     // functions

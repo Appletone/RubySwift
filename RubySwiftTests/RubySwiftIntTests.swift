@@ -52,7 +52,10 @@ class RubySwiftIntTests: XCTestCase {
         var d = 3.days.ago
         
         println(d)
-//        3.days().ago()
+        
+        var day1 = 1.day.ago
+        
+        println(day1)
     }
     
     
